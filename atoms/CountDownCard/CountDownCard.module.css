@@ -1,0 +1,30 @@
+.card--size {
+  width: 72px;
+  height: 92px;
+  border-radius: 5px;
+
+  text-align: center;
+}
+
+.card--light-blue {
+  background-color: var(--light-blue);
+  color: var(--blue);
+}
+
+.num {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+  padding-top: 10px;
+}
+
+.text {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--grey);
+}
+
+.card--darker-grey {
+  background-color: var(--darker-grey);
+  color: white;
+}

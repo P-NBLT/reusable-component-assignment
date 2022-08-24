@@ -1,0 +1,44 @@
+.sm {
+  width: 171px;
+  height: 56px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.lg {
+  width: 279px;
+  height: 56px;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.button--blue {
+  color: white;
+  background-color: var(--blue);
+}
+
+.button--blue:hover {
+  background-color: var(--md-blue);
+}
+
+.button--light-blue {
+  background-color: var(--light-blue);
+  color: var(--blue);
+}
+
+.button--light-blue:hover {
+  background-color: #d2ddff;
+}
+
+.button--white {
+  background-color: white;
+  color: var(--blue);
+}
+
+.button--white:hover {
+  color: var(--md-blue);
+}

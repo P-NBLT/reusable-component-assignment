@@ -1,0 +1,62 @@
+.card {
+  width: 327px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-top: 40px;
+  margin: 0 0 40px 0;
+}
+
+.price {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 64px;
+  margin-bottom: 8px;
+}
+
+.user {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 56px;
+}
+
+.white-background {
+  background-color: white;
+  color: var(--darker-grey);
+}
+
+.blue-background {
+  color: white;
+  background-color: var(--blue);
+}
+
+.background {
+  background-image: url("../../assets/home/bg-pattern-pricing.svg");
+  background-size: 850px;
+  background-position-x: center;
+  background-position-y: 100%;
+  background-repeat: no-repeat;
+  /* background-color: var(--blue); */
+}
+
+.text-dark {
+  color: var(--grey);
+}
+
+.text-dark p {
+  margin-bottom: 16px;
+}
+
+.text-light {
+  color: white;
+}
+
+.text-light p {
+  margin-bottom: 16px;
+}

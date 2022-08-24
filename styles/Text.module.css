@@ -1,0 +1,17 @@
+.info1 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--grey);
+}
+
+.info2 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.white-background {
+  /* color: var(--grey); */
+  color: green;
+}

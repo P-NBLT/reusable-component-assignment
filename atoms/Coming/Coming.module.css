@@ -1,0 +1,25 @@
+.container {
+  width: 248px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-align: center;
+}
+
+.white {
+  display: inline-block;
+  color: white;
+  padding-right: 5px;
+}
+
+.darker-grey {
+  display: inline-block;
+  color: var(--darker-grey);
+  padding-right: 5px;
+}
+
+.blue {
+  display: inline-block;
+  color: var(--blue);
+}
