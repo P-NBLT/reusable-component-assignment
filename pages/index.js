@@ -56,7 +56,7 @@ export default function Home() {
             style: { margin: "16px 0 40px 0" },
           }}
         >
-          Button 1
+          Try for Free
         </Button>
       </FeeCard>
       <FeeCard
@@ -64,20 +64,20 @@ export default function Home() {
         background={true}
         test="test"
       >
-        <p className={`${stylePrice["name"]} `}>Basic</p>
-        <p className={`${stylePrice["price"]} `}>Free</p>
-        <p className={`${stylePrice["user"]} `}>Up to 5 users for free</p>
-        <p className={`${styleText["info2"]} `}>Basic document collaboration</p>
-        <p className={`${styleText["info2"]} `}>2 GB storage</p>
-        <p className={`${styleText["info2"]} `}>Great security and support</p>
+        <p className={`${stylePrice["name"]} `}>Pro</p>
+        <p className={`${stylePrice["price"]} `}>$9.99</p>
+        <p className={`${stylePrice["user"]} `}>Per user, billed monthly</p>
+        <p className={`${styleText["info2"]} `}>All essential integrations</p>
+        <p className={`${styleText["info2"]} `}>50 GB storage</p>
+        <p className={`${styleText["info2"]} `}>More control and insights</p>
         <Button
           css={{
-            color: Tag.color.lightBlue,
+            color: Tag.color.white,
             size: Tag.size.small,
             style: { margin: "16px 0 40px 0" },
           }}
         >
-          Button 1
+          Try for Free
         </Button>
       </FeeCard>
     </div>
