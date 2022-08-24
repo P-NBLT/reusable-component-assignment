@@ -9,6 +9,7 @@ import Button from "../atoms/Button/Button";
 import CountDownCard from "../atoms/CountDownCard/CountDownCard";
 import Coming from "../atoms/Coming/Coming";
 import FeeCard from "../atoms/FeeCard/FeeCard";
+import Header from "../molecules/Header/Header";
 
 export default function Home() {
   return (
@@ -80,6 +81,21 @@ export default function Home() {
           Try for Free
         </Button>
       </FeeCard>
+      <Header
+        classN="header"
+        button={
+          <Button
+            css={{
+              color: Tag.color.blue,
+              size: Tag.size.small,
+              style: { marginTop: "24px" },
+            }}
+          >
+            Get Started
+          </Button>
+        }
+        text={{ title: Text.landingPage.title, info: Text.landingPage.info }}
+      />
     </div>
   );
 }
