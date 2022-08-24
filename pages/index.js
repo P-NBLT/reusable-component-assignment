@@ -11,33 +11,6 @@ import Coming from "../atoms/Coming/Coming";
 import FeeCard from "../atoms/FeeCard/FeeCard";
 
 export default function Home() {
-  const [device, setDevice] = useState("desktop");
-  let size;
-
-  let screenW;
-  let screenH;
-
-  useEffect((e) => {
-    screenW = window.innerWidth | document.documentElement.clientWidth;
-    screenH = window.innerHeight | document.documentElement.clientHeight;
-    // setDevice(screenW);
-    console.log(device);
-    const handleSize = (e) => {
-      screenW = window.innerWidth | document.documentElement.clientWidth;
-      screenH = window.innerHeight | document.documentElement.clientHeight;
-      if (screenW > 1000) {
-        setDevice("desktop");
-      } else if (screenW < 1000) {
-        setDevice("mobile");
-      }
-    };
-    window.addEventListener("resize", handleSize);
-
-    return () => {
-      window.removeEventListener("resize", handleSize);
-    };
-  }, []);
-
   return (
     <div>
       <Head>
