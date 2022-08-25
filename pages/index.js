@@ -11,7 +11,24 @@ import Coming from "../atoms/Coming/Coming";
 import FeeCard from "../atoms/FeeCard/FeeCard";
 import Header from "../molecules/Header/Header";
 
-export default function Home() {
+import fetchEntries from "../util/contentfulPosts";
+
+export async function getStaticProps() {
+  const res = await fetchEntries();
+  console.log(res);
+  const posts = await res.map((post) => {
+    return post.fields;
+  });
+  console.log(posts);
+  return {
+    props: {
+      posts,
+    },
+  };
+}
+
+export default function Home({ posts }) {
+  console.log(posts);
   return (
     <div>
       <Head>
@@ -94,8 +111,23 @@ export default function Home() {
             Get Started
           </Button>
         }
-        text={{ title: Text.landingPage.title, info: Text.landingPage.info }}
+        text={{ title: posts[0].title[1], info: posts[0].textInfo[1] }}
       />
+      {/* <Header
+        classN="header"
+        button={
+          <Button
+            css={{
+              color: Tag.color.blue,
+              size: Tag.size.small,
+              style: { marginTop: "24px" },
+            }}
+          >
+            Get Started
+          </Button>
+        }
+        text={{ title: Text.landingPage.title, info: Text.landingPage.info }}
+      /> */}
     </div>
   );
 }

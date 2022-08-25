@@ -1,13 +1,16 @@
 import React from "react";
 import Title from "../../atoms/Title/Title";
+import fetchEntries from "../../util/contentfulPosts";
+import Post from "../../component/Post";
 
 const Header = ({ text, classN, button }) => {
   return (
     <div>
       <Title
         classN={classN}
-        text={{ title: text.title, info: text.info }}
+        text={text}
         button={button}
+        // posts={posts}
       ></Title>
     </div>
   );
